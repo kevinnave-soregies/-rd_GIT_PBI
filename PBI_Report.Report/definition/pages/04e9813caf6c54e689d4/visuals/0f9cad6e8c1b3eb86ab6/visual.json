@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.7.0/schema.json",
   "name": "0f9cad6e8c1b3eb86ab6",
   "position": {
-    "x": 607.90273556231011,
-    "y": 125.47112462006079,
+    "x": 805.34954407294833,
+    "y": 391.9756838905775,
     "z": 2,
-    "height": 252.88753799392097,
-    "width": 309.30091185410333,
+    "height": 314.16413373860183,
+    "width": 452.27963525835867,
     "tabOrder": 2
   },
   "visual": {
@@ -23,11 +23,11 @@
                       "Entity": "prod_raw_event_macro_event"
                     }
                   },
-                  "Property": "Nature du Titulaire"
+                  "Property": "Gestionnaire_contrat"
                 }
               },
-              "queryRef": "prod_raw_event_macro_event.Nature du Titulaire",
-              "nativeQueryRef": "Nature du Titulaire",
+              "queryRef": "prod_raw_event_macro_event.Gestionnaire_contrat",
+              "nativeQueryRef": "Gestionnaire_contrat",
               "active": true
             }
           ]

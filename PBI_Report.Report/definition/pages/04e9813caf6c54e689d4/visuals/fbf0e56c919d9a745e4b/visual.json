@@ -6,11 +6,11 @@
     "y": 125.47112462006079,
     "z": 0,
     "height": 252.88753799392097,
-    "width": 509.66565349544078,
+    "width": 685.71428571428578,
     "tabOrder": 0
   },
   "visual": {
-    "visualType": "clusteredColumnChart",
+    "visualType": "clusteredBarChart",
     "query": {
       "queryState": {
         "Category": {
