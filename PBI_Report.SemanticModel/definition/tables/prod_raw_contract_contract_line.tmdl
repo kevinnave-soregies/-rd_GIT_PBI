@@ -1,0 +1,151 @@
+table prod_raw_contract_contract_line
+	lineageTag: 4f7c0549-49b7-481e-aa4b-85f0a79dfb3f
+
+	measure 'Mesure lignes' = COUNTROWS( FILTER( 'prod_raw_event_macro_event', 'prod_raw_event_macro_event'[Gestionnaire_contrat] = "Nathalie DRIGNY" ) )
+		formatString: 0
+		displayFolder: Mesures
+		lineageTag: dcaa5f53-c1c5-4b8a-bfef-a2ac7d9d3f81
+
+	column Société
+		dataType: string
+		lineageTag: b28f2f87-1b90-4926-960e-422ff1af8922
+		summarizeBy: none
+		sourceColumn: Société
+
+		annotation SummarizationSetBy = Automatic
+
+	column Processus
+		dataType: string
+		lineageTag: 5ec5fe77-5769-4241-a7f5-179fbcf6bf48
+		summarizeBy: none
+		sourceColumn: Processus
+
+		annotation SummarizationSetBy = Automatic
+
+	column Typologie
+		dataType: string
+		lineageTag: 80c80439-9278-457d-97c7-fcc5740926b6
+		summarizeBy: none
+		sourceColumn: Typologie
+
+		annotation SummarizationSetBy = Automatic
+
+	column Schéma
+		dataType: string
+		lineageTag: 136f4902-4a1b-4452-9d59-10f1f01bb753
+		summarizeBy: none
+		sourceColumn: Schéma
+
+		annotation SummarizationSetBy = Automatic
+
+	column natureOffre
+		dataType: string
+		lineageTag: 0e830325-04fc-4350-a717-863760029f54
+		summarizeBy: none
+		sourceColumn: natureOffre
+
+		annotation SummarizationSetBy = Automatic
+
+	column Offre
+		dataType: string
+		lineageTag: 37fb697b-60dc-4022-84b3-9e97a39256f9
+		summarizeBy: none
+		sourceColumn: Offre
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fluide
+		dataType: string
+		lineageTag: 687bc027-a9b3-4a8d-a329-85d2d714b3d6
+		summarizeBy: none
+		sourceColumn: Fluide
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ao
+		dataType: string
+		lineageTag: 836896e8-5b2d-40d7-a838-031c2d81add0
+		summarizeBy: none
+		sourceColumn: Ao
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategorieSegment
+		dataType: string
+		lineageTag: 0829ee33-bdbc-4464-bd7c-9e759aec3c32
+		summarizeBy: none
+		sourceColumn: CategorieSegment
+
+		annotation SummarizationSetBy = Automatic
+
+	column Segment
+		dataType: string
+		lineageTag: b1c87706-6f12-4266-abf0-12a5204ba37b
+		summarizeBy: none
+		sourceColumn: Segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column NatureTitulaire
+		dataType: string
+		lineageTag: a5876852-7880-4602-9ca2-913d2cd0871f
+		summarizeBy: none
+		sourceColumn: NatureTitulaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResPro
+		dataType: string
+		lineageTag: bc018b86-b68b-4a8f-8531-7fef982f66d6
+		summarizeBy: none
+		sourceColumn: ResPro
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tarif
+		dataType: string
+		lineageTag: a8576371-79d2-4e08-94c6-c8e276e40576
+		summarizeBy: none
+		sourceColumn: Tarif
+
+		annotation SummarizationSetBy = Automatic
+
+	column Prm
+		dataType: int64
+		formatString: 0
+		lineageTag: 0a57e376-45eb-4792-b57b-ef220250d584
+		summarizeBy: sum
+		sourceColumn: Prm
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d''extraction'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f36b0611-640c-4783-bab3-822b257512c6
+		summarizeBy: none
+		sourceColumn: Date d'extraction
+
+		variation Variation
+			isDefault
+			relationship: d9983cd4-7310-43b1-9050-7eac115bae2f
+			defaultHierarchy: LocalDateTable_4c96b46e-eb28-40f6-9b0c-ff814cb41b11.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition prod_raw_contract_contract_line = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"e63a40bc-f9eb-46c4-b385-6bada6ef5f51" = Workspaces{[workspaceId="e63a40bc-f9eb-46c4-b385-6bada6ef5f51"]}[Data],
+				    #"5f045955-5754-485d-8254-777172a42059" = #"e63a40bc-f9eb-46c4-b385-6bada6ef5f51"{[dataflowId="5f045955-5754-485d-8254-777172a42059"]}[Data],
+				    prod_raw_contract_contract_line_ = #"5f045955-5754-485d-8254-777172a42059"{[entity="prod_raw_contract_contract_line",version=""]}[Data]
+				in
+				    prod_raw_contract_contract_line_
+
+	annotation PBI_ResultType = Table
+

@@ -19,7 +19,20 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 487,
+            "y": 3
+          },
+          "nodeIndex": "prod_raw_contract_contract_line",
+          "nodeLineageTag": "4f7c0549-49b7-481e-aa4b-85f0a79dfb3f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
         }
       ],
       "name": "Toutes les tables",

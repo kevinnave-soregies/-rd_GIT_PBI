@@ -138,7 +138,7 @@ table prod_raw_event_macro_event
 		annotation UnderlyingDateTimeDataType = Date
 
 	column Coût_global
-		dataType: double
+		dataType: int64
 		lineageTag: e678a97a-af94-401f-961b-a3569e5e5726
 		summarizeBy: sum
 		sourceColumn: Coût_global
@@ -447,9 +447,12 @@ table prod_raw_event_macro_event
 				    Workspaces = Source{[Id="Workspaces"]}[Data],
 				    #"e63a40bc-f9eb-46c4-b385-6bada6ef5f51" = Workspaces{[workspaceId="e63a40bc-f9eb-46c4-b385-6bada6ef5f51"]}[Data],
 				    #"5c4f7428-c19e-4f77-99d3-bfbd96a33deb" = #"e63a40bc-f9eb-46c4-b385-6bada6ef5f51"{[dataflowId="5c4f7428-c19e-4f77-99d3-bfbd96a33deb"]}[Data],
-				    prod_raw_event_macro_event_ = #"5c4f7428-c19e-4f77-99d3-bfbd96a33deb"{[entity="prod_raw_event_macro_event",version=""]}[Data]
+				    prod_raw_event_macro_event_ = #"5c4f7428-c19e-4f77-99d3-bfbd96a33deb"{[entity="prod_raw_event_macro_event",version=""]}[Data],
+				    #"Type modifié" = Table.TransformColumnTypes(prod_raw_event_macro_event_,{{"Coût_global", Int64.Type}})
 				in
-				    prod_raw_event_macro_event_
+				    #"Type modifié"
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
 

@@ -43,3 +43,8 @@ relationship e5dfd8d7-9865-4dad-98f0-fb254e182d4f
 	fromColumn: prod_raw_event_macro_event.'Premier statut échoué'
 	toColumn: LocalDateTable_1c70cc03-e7df-4422-9dc5-ff92f34c6f14.Date
 
+relationship d9983cd4-7310-43b1-9050-7eac115bae2f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: prod_raw_contract_contract_line.'Date d''extraction'
+	toColumn: LocalDateTable_4c96b46e-eb28-40f6-9b0c-ff814cb41b11.Date
+
