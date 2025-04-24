@@ -1,9 +1,30 @@
 model Model
 	culture: fr-FR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: fr-FR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
 
 annotation PBI_ProTooling = ["DevMode"]
 
 annotation PBIDesktopVersion = 2.142.928.0 (25.04)+de52df9f0bb74ad93a80d89c52d63fe6d07e0e1b
+
+annotation PBI_QueryOrder = ["prod_raw_event_macro_event"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+ref table prod_raw_event_macro_event
+ref table DateTableTemplate_47b1d6a1-c774-4dd5-a347-f82ae9bb3448
+ref table LocalDateTable_05518a62-5dc4-4a79-94b7-05e7515f6336
+ref table LocalDateTable_3375c8f9-ec60-48f4-b89e-efd68bf52713
+ref table LocalDateTable_f0aec191-ac2f-4652-b9b3-11a5b042d095
+ref table LocalDateTable_4640c6b3-6d02-4e5c-b292-8eb0dae2f1b4
+ref table LocalDateTable_3ed7740a-b286-4197-9bc4-cfce89900e43
+ref table LocalDateTable_7a5495b6-da3f-43e1-a6f2-64772c3400a4
+ref table LocalDateTable_066193e3-c51b-451c-b2a1-eb031106e58f
+ref table LocalDateTable_021ee726-d7ef-4e5e-8bb7-700458e88807
+ref table LocalDateTable_1c70cc03-e7df-4422-9dc5-ff92f34c6f14
 
 ref cultureInfo fr-FR
 

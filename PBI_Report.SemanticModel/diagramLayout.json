@@ -7,7 +7,21 @@
         "x": 0,
         "y": 0
       },
-      "nodes": [],
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "prod_raw_event_macro_event",
+          "nodeLineageTag": "9157096e-711d-4440-a5c6-0106dd771c0b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
       "name": "Toutes les tables",
       "zoomValue": 100,
       "pinKeyFieldsToTop": false,

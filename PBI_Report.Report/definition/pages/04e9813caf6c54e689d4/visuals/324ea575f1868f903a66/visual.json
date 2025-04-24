@@ -1,0 +1,222 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.7.0/schema.json",
+  "name": "324ea575f1868f903a66",
+  "position": {
+    "x": 84.620060790273556,
+    "y": 391.9756838905775,
+    "z": 1,
+    "height": 314.16413373860183,
+    "width": 1173.0091185410336,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "prod_raw_event_macro_event"
+                    }
+                  },
+                  "Property": "Contrat"
+                }
+              },
+              "queryRef": "prod_raw_event_macro_event.Contrat",
+              "nativeQueryRef": "Contrat"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "prod_raw_event_macro_event"
+                    }
+                  },
+                  "Property": "Commune_PCT"
+                }
+              },
+              "queryRef": "prod_raw_event_macro_event.Commune_PCT",
+              "nativeQueryRef": "Commune_PCT"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "prod_raw_event_macro_event"
+                    }
+                  },
+                  "Property": "Code_produit_variante"
+                }
+              },
+              "queryRef": "prod_raw_event_macro_event.Code_produit_variante",
+              "nativeQueryRef": "Code_produit_variante"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "prod_raw_event_macro_event"
+                    }
+                  },
+                  "Property": "Code périmètre client"
+                }
+              },
+              "queryRef": "prod_raw_event_macro_event.Code périmètre client",
+              "nativeQueryRef": "Code périmètre client"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "prod_raw_event_macro_event"
+                    }
+                  },
+                  "Property": "Nature"
+                }
+              },
+              "queryRef": "prod_raw_event_macro_event.Nature",
+              "nativeQueryRef": "Nature"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "prod_raw_event_macro_event"
+                    }
+                  },
+                  "Property": "PRM"
+                }
+              },
+              "queryRef": "prod_raw_event_macro_event.PRM",
+              "nativeQueryRef": "PRM"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "prod_raw_event_macro_event"
+                    }
+                  },
+                  "Property": "Libellé périmètre client"
+                }
+              },
+              "queryRef": "prod_raw_event_macro_event.Libellé périmètre client",
+              "nativeQueryRef": "Libellé périmètre client"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "prod_raw_event_macro_event"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "Date_envoi_ME"
+                        }
+                      },
+                      "Hierarchy": "Hiérarchie de dates"
+                    }
+                  },
+                  "Level": "Année"
+                }
+              },
+              "queryRef": "prod_raw_event_macro_event.Date_envoi_ME.Variation.Hiérarchie de dates.Année",
+              "nativeQueryRef": "Date_envoi_ME Année"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "prod_raw_event_macro_event"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "Date_envoi_ME"
+                        }
+                      },
+                      "Hierarchy": "Hiérarchie de dates"
+                    }
+                  },
+                  "Level": "Trimestre"
+                }
+              },
+              "queryRef": "prod_raw_event_macro_event.Date_envoi_ME.Variation.Hiérarchie de dates.Trimestre",
+              "nativeQueryRef": "Date_envoi_ME Trimestre"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "prod_raw_event_macro_event"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "Date_envoi_ME"
+                        }
+                      },
+                      "Hierarchy": "Hiérarchie de dates"
+                    }
+                  },
+                  "Level": "Mois"
+                }
+              },
+              "queryRef": "prod_raw_event_macro_event.Date_envoi_ME.Variation.Hiérarchie de dates.Mois",
+              "nativeQueryRef": "Date_envoi_ME Mois"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "prod_raw_event_macro_event"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "Date_envoi_ME"
+                        }
+                      },
+                      "Hierarchy": "Hiérarchie de dates"
+                    }
+                  },
+                  "Level": "Jour"
+                }
+              },
+              "queryRef": "prod_raw_event_macro_event.Date_envoi_ME.Variation.Hiérarchie de dates.Jour",
+              "nativeQueryRef": "Date_envoi_ME Jour"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

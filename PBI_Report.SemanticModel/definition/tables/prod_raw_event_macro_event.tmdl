@@ -1,0 +1,455 @@
+table prod_raw_event_macro_event
+	lineageTag: 9157096e-711d-4440-a5c6-0106dd771c0b
+
+	column Numéro_ME
+		dataType: string
+		lineageTag: ef2c4d51-b554-4670-a264-d2da903f3e85
+		summarizeBy: none
+		sourceColumn: Numéro_ME
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date_envoi_ME
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 27df6d8d-86d5-4fbd-b430-ed5a58fd9bde
+		summarizeBy: none
+		sourceColumn: Date_envoi_ME
+
+		variation Variation
+			isDefault
+			relationship: b9aecaf8-f3a1-4b42-b0d9-474e336689b2
+			defaultHierarchy: LocalDateTable_05518a62-5dc4-4a79-94b7-05e7515f6336.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Dispo_facturation_unitaire
+		dataType: string
+		lineageTag: e3f5d1e6-d581-4a2a-855d-50f577c0d746
+		summarizeBy: none
+		sourceColumn: Dispo_facturation_unitaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column Demande_associée
+		dataType: string
+		lineageTag: cf0403c7-f89b-4c50-8844-e5a0e89ea1ef
+		summarizeBy: none
+		sourceColumn: Demande_associée
+
+		annotation SummarizationSetBy = Automatic
+
+	column Origine
+		dataType: string
+		lineageTag: 1daa4196-a32b-4192-bc9f-1d5411aae1c7
+		summarizeBy: none
+		sourceColumn: Origine
+
+		annotation SummarizationSetBy = Automatic
+
+	column A_facturer
+		dataType: string
+		lineageTag: fb737b28-e592-4a12-815e-8018ebaaa65c
+		summarizeBy: none
+		sourceColumn: A_facturer
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Utilisateur réseau'
+		dataType: string
+		lineageTag: 6debde30-5579-4db3-a759-50cb9b87ec32
+		summarizeBy: none
+		sourceColumn: Utilisateur réseau
+
+		annotation SummarizationSetBy = Automatic
+
+	column N°Affaire
+		dataType: string
+		lineageTag: 30f1d030-c496-43d3-9f51-3ff4c0851223
+		summarizeBy: none
+		sourceColumn: N°Affaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date_création_affaire
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 38250d40-b47c-4a32-a109-06d894a8ef2d
+		summarizeBy: none
+		sourceColumn: Date_création_affaire
+
+		variation Variation
+			isDefault
+			relationship: ca49b552-ff5d-4538-88ef-cffcef66514a
+			defaultHierarchy: LocalDateTable_3375c8f9-ec60-48f4-b89e-efd68bf52713.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Date_RDV
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 06ad2863-35e8-417f-b8b1-7a8b41efe955
+		summarizeBy: none
+		sourceColumn: Date_RDV
+
+		variation Variation
+			isDefault
+			relationship: a1279353-47fe-44f0-9282-83c8c0770a3e
+			defaultHierarchy: LocalDateTable_f0aec191-ac2f-4652-b9b3-11a5b042d095.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Date_clôture_affaire
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4c3936f0-13a4-4996-85d1-c258f0783003
+		summarizeBy: none
+		sourceColumn: Date_clôture_affaire
+
+		variation Variation
+			isDefault
+			relationship: df2c9977-675b-4578-bc5a-13322d9626f4
+			defaultHierarchy: LocalDateTable_4640c6b3-6d02-4e5c-b292-8eb0dae2f1b4.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Date_application
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 31fb3de3-8764-475a-a955-7076c2b0b682
+		summarizeBy: none
+		sourceColumn: Date_application
+
+		variation Variation
+			isDefault
+			relationship: 010d3c91-30fd-42e8-90d8-3d24902b0363
+			defaultHierarchy: LocalDateTable_3ed7740a-b286-4197-9bc4-cfce89900e43.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Coût_global
+		dataType: double
+		lineageTag: e678a97a-af94-401f-961b-a3569e5e5726
+		summarizeBy: sum
+		sourceColumn: Coût_global
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Coût_variante
+		dataType: double
+		lineageTag: 9b5983e1-3202-4dc8-9dc3-38fbdeed211a
+		summarizeBy: sum
+		sourceColumn: Coût_variante
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Type_tarif_FR
+		dataType: string
+		lineageTag: 6adbe4b1-4343-4942-9f8c-756fe126913c
+		summarizeBy: none
+		sourceColumn: Type_tarif_FR
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nature
+		dataType: string
+		lineageTag: fb08528f-69fc-4620-b8bc-b8581ef151e2
+		summarizeBy: none
+		sourceColumn: Nature
+
+		annotation SummarizationSetBy = Automatic
+
+	column Relève_terrain
+		dataType: string
+		lineageTag: 56afb5c2-6b26-4dba-a79b-527bc8916315
+		summarizeBy: none
+		sourceColumn: Relève_terrain
+
+		annotation SummarizationSetBy = Automatic
+
+	column Affaire_initiative_GRD
+		dataType: string
+		lineageTag: b93a1ca7-4d41-4962-885f-6cc31bd394d8
+		summarizeBy: none
+		sourceColumn: Affaire_initiative_GRD
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_on
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: eeeeaee0-1625-41b6-a59e-91b5287f8e8b
+		summarizeBy: none
+		sourceColumn: updated_on
+
+		variation Variation
+			isDefault
+			relationship: c3a86292-3293-49f8-8965-c9c2e5ec7387
+			defaultHierarchy: LocalDateTable_7a5495b6-da3f-43e1-a6f2-64772c3400a4.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_on
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ddad6b8a-76bf-4b16-a3fb-dd10e578a545
+		summarizeBy: none
+		sourceColumn: created_on
+
+		variation Variation
+			isDefault
+			relationship: fe21bcd8-6fcd-4f04-9767-447b99e1ab7d
+			defaultHierarchy: LocalDateTable_066193e3-c51b-451c-b2a1-eb031106e58f.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Commentaire
+		dataType: string
+		lineageTag: 88defcd9-07b7-4841-afe8-828417c8190f
+		summarizeBy: none
+		sourceColumn: Commentaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date du jour'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 7289a6c8-d7f5-46cd-ba6b-eb158e1e0651
+		summarizeBy: none
+		sourceColumn: Date du jour
+
+		variation Variation
+			isDefault
+			relationship: 618be5c4-259b-411b-b188-be0aaed4f697
+			defaultHierarchy: LocalDateTable_021ee726-d7ef-4e5e-8bb7-700458e88807.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Durée ME en secondes'
+		dataType: double
+		lineageTag: 9c953bbf-2063-413b-8d72-42c50e6a0639
+		summarizeBy: sum
+		sourceColumn: Durée ME en secondes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Libellé_prestation
+		dataType: string
+		lineageTag: 88be65a3-16dc-45b8-80ba-475733fed414
+		summarizeBy: none
+		sourceColumn: Libellé_prestation
+
+		annotation SummarizationSetBy = Automatic
+
+	column Famille_produit
+		dataType: string
+		lineageTag: 188f411e-c337-42f6-bd23-d36c2ce96329
+		summarizeBy: none
+		sourceColumn: Famille_produit
+
+		annotation SummarizationSetBy = Automatic
+
+	column Type
+		dataType: string
+		lineageTag: 540dc362-ddc0-4874-8411-7829f2d06185
+		summarizeBy: none
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Code_produit_variante
+		dataType: string
+		lineageTag: bedde6d0-5d93-4394-81b0-0d91333505ff
+		summarizeBy: none
+		sourceColumn: Code_produit_variante
+
+		annotation SummarizationSetBy = Automatic
+
+	column Libellé_variante
+		dataType: string
+		lineageTag: 4e76a7ff-4988-4e90-868c-1838575413a9
+		summarizeBy: none
+		sourceColumn: Libellé_variante
+
+		annotation SummarizationSetBy = Automatic
+
+	column PCT
+		dataType: string
+		lineageTag: 90f4b8a6-f020-4c56-b549-67d28d057fb4
+		summarizeBy: none
+		sourceColumn: PCT
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRM
+		dataType: string
+		lineageTag: 2a1af2fc-6b6d-4fd6-8e52-5a7ca5b21f20
+		summarizeBy: none
+		sourceColumn: PRM
+
+		annotation SummarizationSetBy = Automatic
+
+	column segment
+		dataType: string
+		lineageTag: a3b67f6e-bdd9-4690-a012-9e75e74c0c59
+		summarizeBy: none
+		sourceColumn: segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column fluid
+		dataType: string
+		lineageTag: b1f7812b-3256-4e34-8823-73c6d2445e74
+		summarizeBy: none
+		sourceColumn: fluid
+
+		annotation SummarizationSetBy = Automatic
+
+	column Commune_PCT
+		dataType: string
+		lineageTag: f0a57863-be27-4e56-9764-4d6a999cbc2c
+		summarizeBy: none
+		sourceColumn: Commune_PCT
+
+		annotation SummarizationSetBy = Automatic
+
+	column Alarme
+		dataType: string
+		lineageTag: f932dc53-ac43-43c3-8a34-d73bd5a90ff4
+		summarizeBy: none
+		sourceColumn: Alarme
+
+		annotation SummarizationSetBy = Automatic
+
+	column Message
+		dataType: string
+		lineageTag: c4f3b559-a945-4f3e-8154-e40a58f7a763
+		summarizeBy: none
+		sourceColumn: Message
+
+		annotation SummarizationSetBy = Automatic
+
+	column Emetteur
+		dataType: string
+		lineageTag: 6befe670-9fc6-4b0c-bb9f-492a76d72e2a
+		summarizeBy: none
+		sourceColumn: Emetteur
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nature Titulaire'
+		dataType: string
+		lineageTag: 3aff404e-6235-4393-a4cf-3b6e3aee0421
+		summarizeBy: none
+		sourceColumn: Nature Titulaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Premier statut échoué'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 83867cfe-40af-40d9-ab7c-6b07ac38b42c
+		summarizeBy: none
+		sourceColumn: Premier statut échoué
+
+		variation Variation
+			isDefault
+			relationship: e5dfd8d7-9865-4dad-98f0-fb254e182d4f
+			defaultHierarchy: LocalDateTable_1c70cc03-e7df-4422-9dc5-ff92f34c6f14.'Hiérarchie de dates'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Premier ME Ech'
+		dataType: string
+		lineageTag: d4ccdd3b-2916-40ef-85a7-544ade91b789
+		summarizeBy: none
+		sourceColumn: Premier ME Ech
+
+		annotation SummarizationSetBy = Automatic
+
+	column Statut_affaire_ME
+		dataType: string
+		lineageTag: a7352fb9-5770-4fcb-a087-da421f4da1d4
+		summarizeBy: none
+		sourceColumn: Statut_affaire_ME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nature Titu'
+		dataType: string
+		lineageTag: 851c2087-43f8-4db3-9109-1d619cd741d1
+		summarizeBy: none
+		sourceColumn: Nature Titu
+
+		annotation SummarizationSetBy = Automatic
+
+	column Contrat
+		dataType: string
+		lineageTag: 456faae7-b530-434f-9d1e-ea5da86df99f
+		summarizeBy: none
+		sourceColumn: Contrat
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gestionnaire_contrat
+		dataType: string
+		lineageTag: f3cb493b-1a08-4c0f-a3a4-98acc5ea5b5b
+		summarizeBy: none
+		sourceColumn: Gestionnaire_contrat
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nature du Titulaire'
+		dataType: string
+		lineageTag: b305baaa-61ba-4649-829f-22a4a7e410d0
+		summarizeBy: none
+		sourceColumn: Nature du Titulaire
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Libellé périmètre client'
+		dataType: string
+		lineageTag: ddab2fa8-b466-463a-87be-c4ed5b769770
+		summarizeBy: none
+		sourceColumn: Libellé périmètre client
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Code périmètre client'
+		dataType: string
+		lineageTag: fbe909a1-ad26-4d67-b422-b5c52c69e2b9
+		summarizeBy: none
+		sourceColumn: Code périmètre client
+
+		annotation SummarizationSetBy = Automatic
+
+	partition prod_raw_event_macro_event = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"e63a40bc-f9eb-46c4-b385-6bada6ef5f51" = Workspaces{[workspaceId="e63a40bc-f9eb-46c4-b385-6bada6ef5f51"]}[Data],
+				    #"5c4f7428-c19e-4f77-99d3-bfbd96a33deb" = #"e63a40bc-f9eb-46c4-b385-6bada6ef5f51"{[dataflowId="5c4f7428-c19e-4f77-99d3-bfbd96a33deb"]}[Data],
+				    prod_raw_event_macro_event_ = #"5c4f7428-c19e-4f77-99d3-bfbd96a33deb"{[entity="prod_raw_event_macro_event",version=""]}[Data]
+				in
+				    prod_raw_event_macro_event_
+
+	annotation PBI_ResultType = Table
+

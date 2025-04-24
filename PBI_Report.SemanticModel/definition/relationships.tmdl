@@ -1,0 +1,45 @@
+relationship b9aecaf8-f3a1-4b42-b0d9-474e336689b2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: prod_raw_event_macro_event.Date_envoi_ME
+	toColumn: LocalDateTable_05518a62-5dc4-4a79-94b7-05e7515f6336.Date
+
+relationship ca49b552-ff5d-4538-88ef-cffcef66514a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: prod_raw_event_macro_event.Date_création_affaire
+	toColumn: LocalDateTable_3375c8f9-ec60-48f4-b89e-efd68bf52713.Date
+
+relationship a1279353-47fe-44f0-9282-83c8c0770a3e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: prod_raw_event_macro_event.Date_RDV
+	toColumn: LocalDateTable_f0aec191-ac2f-4652-b9b3-11a5b042d095.Date
+
+relationship df2c9977-675b-4578-bc5a-13322d9626f4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: prod_raw_event_macro_event.Date_clôture_affaire
+	toColumn: LocalDateTable_4640c6b3-6d02-4e5c-b292-8eb0dae2f1b4.Date
+
+relationship 010d3c91-30fd-42e8-90d8-3d24902b0363
+	joinOnDateBehavior: datePartOnly
+	fromColumn: prod_raw_event_macro_event.Date_application
+	toColumn: LocalDateTable_3ed7740a-b286-4197-9bc4-cfce89900e43.Date
+
+relationship c3a86292-3293-49f8-8965-c9c2e5ec7387
+	joinOnDateBehavior: datePartOnly
+	fromColumn: prod_raw_event_macro_event.updated_on
+	toColumn: LocalDateTable_7a5495b6-da3f-43e1-a6f2-64772c3400a4.Date
+
+relationship fe21bcd8-6fcd-4f04-9767-447b99e1ab7d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: prod_raw_event_macro_event.created_on
+	toColumn: LocalDateTable_066193e3-c51b-451c-b2a1-eb031106e58f.Date
+
+relationship 618be5c4-259b-411b-b188-be0aaed4f697
+	joinOnDateBehavior: datePartOnly
+	fromColumn: prod_raw_event_macro_event.'Date du jour'
+	toColumn: LocalDateTable_021ee726-d7ef-4e5e-8bb7-700458e88807.Date
+
+relationship e5dfd8d7-9865-4dad-98f0-fb254e182d4f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: prod_raw_event_macro_event.'Premier statut échoué'
+	toColumn: LocalDateTable_1c70cc03-e7df-4422-9dc5-ff92f34c6f14.Date
+

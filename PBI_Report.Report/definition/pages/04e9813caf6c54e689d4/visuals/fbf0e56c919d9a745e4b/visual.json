@@ -1,0 +1,85 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.7.0/schema.json",
+  "name": "fbf0e56c919d9a745e4b",
+  "position": {
+    "x": 84.620060790273556,
+    "y": 125.47112462006079,
+    "z": 0,
+    "height": 252.88753799392097,
+    "width": 509.66565349544078,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "prod_raw_event_macro_event"
+                    }
+                  },
+                  "Property": "segment"
+                }
+              },
+              "queryRef": "prod_raw_event_macro_event.segment",
+              "nativeQueryRef": "segment",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "prod_raw_event_macro_event"
+                        }
+                      },
+                      "Property": "PRM"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "CountNonNull(prod_raw_event_macro_event.PRM)",
+              "nativeQueryRef": "PRM"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "prod_raw_event_macro_event"
+                      }
+                    },
+                    "Property": "PRM"
+                  }
+                },
+                "Function": 5
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -34,6 +34,17 @@
           "type": "BaseTheme"
         }
       ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Indicateurs_HDP_-_Facturation_3046904039938755.svg",
+          "path": "Indicateurs_HDP_-_Facturation_3046904039938755.svg",
+          "type": "Image"
+        }
+      ]
     }
   ],
   "settings": {
