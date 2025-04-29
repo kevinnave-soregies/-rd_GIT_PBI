@@ -1,7 +1,7 @@
 # Ignore les fichiers générés par Power BI Desktop (non nécessaires pour le versioning)
-*/pbi/localSettings.json
-*/pbi/Connections.json
-*/pbi/DataModelSchema
+*/.pbi/localSettings.json
+*/.pbi/Connections.json
+*/.pbi/DataModelSchema
 
 # Ignore les fichiers temporaires de Power BI
 *.tmp
