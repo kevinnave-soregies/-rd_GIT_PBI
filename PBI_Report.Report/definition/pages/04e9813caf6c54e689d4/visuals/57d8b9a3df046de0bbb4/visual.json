@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.7.0/schema.json",
+  "name": "57d8b9a3df046de0bbb4",
+  "position": {
+    "x": 267.47720364741645,
+    "y": 54.468085106382979,
+    "z": 4,
+    "height": 56.413373860182375,
+    "width": 812.15805471124622,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Test v1 rapport pbip versioning",
+                    "textStyle": {
+                      "fontFamily": "DIN",
+                      "fontSize": "32pt"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
